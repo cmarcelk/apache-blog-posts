@@ -19,12 +19,13 @@ To update your tools:
     npm install -g cordova
     npm install -g plugman
 
-Platform updates
-  - [Cordova iOS 3.7.0](http://cordova.apache.org/announcements/2014/11/06/cordova-ios-3.7.0.html)
-  - [Cordova Windows & WP8 3.7.0](http://cordova.apache.org/announcements/2014/11/06/cordova-wp-windows-3.7.0.html)
-
-Other changes include:
+Changes include:
 <!--more-->
+
+## Platform updates
+When adding these platforms to your project, the following versions are now used by default. These platform versions were released recently, and the tools' defaults were updated.
+* [Cordova iOS 3.7.0](http://cordova.apache.org/announcements/2014/11/06/cordova-ios-3.7.0.html)
+* [Cordova Windows & WP8 3.7.0](http://cordova.apache.org/announcements/2014/11/06/cordova-wp-windows-3.7.0.html)
 
 ## cordova-lib
 * [CB-7988](https://issues.apache.org/jira/browse/CB-7988) Update platform versions for **iOS**, **WP8** & **Windows** to 3.7.0
