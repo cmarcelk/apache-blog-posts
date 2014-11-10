@@ -28,27 +28,27 @@ When adding these platforms to your project, the following versions are now used
 * [Cordova Windows & WP8 3.7.0](http://cordova.apache.org/announcements/2014/11/06/cordova-wp-windows-3.7.0.html)
 
 ## cordova-lib
-* [CB-7988](https://issues.apache.org/jira/browse/CB-7988) Update platform versions for **iOS**, **WP8** & **Windows** to 3.7.0
-* [CB-7846](https://issues.apache.org/jira/browse/CB-7846) Fix plugin deletion when dependency plugin does not exist
-* [CB-6992](https://issues.apache.org/jira/browse/CB-6992) Fix build issue on iOS when app name contains accented characters
-* [CB-7884](https://issues.apache.org/jira/browse/CB-7884) moved platform metadata to platformsConfig.json
-* Amazon Specific changes: Added support for SdkVersion
-* Expose PluginInfo from cordova-lib
-* [CB-7839](https://issues.apache.org/jira/browse/CB-7839) android: Fix versionCode logic when version is less than 3 digits
-* [CB-7033](https://issues.apache.org/jira/browse/CB-7033) Improve cordova platform check
-* [CB-7311](https://issues.apache.org/jira/browse/CB-7311) Fix xcode project manipulation on Windows host
-* [CB-7820](https://issues.apache.org/jira/browse/CB-7820) Make cordova platfrom restore not stop if a platforms fails to restore
-* Enable platform-specific id for android and ios
-* Check for a CORDOVA_HOME environment variable to create a global config path
+* [CB-7988](https://issues.apache.org/jira/browse/CB-7988) Update platform versions for **iOS**, **WP8** & **Windows** to **3.7.0**
+* [CB-7846](https://issues.apache.org/jira/browse/CB-7846) Fix plugin deletion when a dependent plugin does not exist
+* [CB-6992](https://issues.apache.org/jira/browse/CB-6992) Fix build issue on **iOS** when app name contains accented characters
+* [CB-7884](https://issues.apache.org/jira/browse/CB-7884) moved platform metadata to `platformsConfig.json`
+* Amazon Specific changes: Added support for `SdkVersion`
+* Expose `PluginInfo` from cordova-lib
+* [CB-7839](https://issues.apache.org/jira/browse/CB-7839) android: Fix `versionCode` logic when version is less than 3 digits
+* [CB-7033](https://issues.apache.org/jira/browse/CB-7033) Improve `cordova platform check`
+* [CB-7311](https://issues.apache.org/jira/browse/CB-7311) Fix **XCode** project manipulation on **Windows** host
+* [CB-7820](https://issues.apache.org/jira/browse/CB-7820) Make `cordova platfrom restore` not stop if a platform fails to restore
+* Enable platform-specific id for **Android** and **iOS**
+* Check for a `CORDOVA_HOME` environment variable to create a global config path
 
 ## cordova
 * Expose cordova-lib and the cli from cordova-cli
-* [CB-7636](https://issues.apache.org/jira/browse/CB-7636) Allow using --nobuild flag without screaning
+* [CB-7636](https://issues.apache.org/jira/browse/CB-7636) Allow using `--nobuild` flag without screening
 
 ## cordova-js
-* [CB-7868](https://issues.apache.org/jira/browse/CB-7868) Make <clobbers> on navigator not break on some versions of Android
-* [CB-7868](https://issues.apache.org/jira/browse/CB-7868) Use utils.defineGetterSetter instead of Object.defineProperty
-* Upleveled amazon-fireos bridge.
+* [CB-7868](https://issues.apache.org/jira/browse/CB-7868) Make `<clobbers>` on `navigator` not break on some versions of **Android**
+* [CB-7868](https://issues.apache.org/jira/browse/CB-7868) Use `utils.defineGetterSetter` instead of `Object.defineProperty`
+* Upleveled **amazon-fireos** bridge
 * [CB-7735](https://issues.apache.org/jira/browse/CB-7735) Fix **iOS** bridge race condition when using innerHTML on <body>
-* [CB-2520](https://issues.apache.org/jira/browse/CB-2520) - User agent-related changes for custom user agents in **iOS**
+* [CB-2520](https://issues.apache.org/jira/browse/CB-2520) User agent-related changes for custom user agents in **iOS**
 
