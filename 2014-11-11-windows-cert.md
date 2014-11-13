@@ -8,12 +8,14 @@ categories: news
 tags: news release 
 ---
 
-A certificate in the **Windows** platform template has expired on 11/11/2014 and as a result, building **Windows** using the **Cordova CLI** currently fails. This affects all existing projects and any new projects created using the command line prior to **Cordova** versions <= `4.0.0`. 
+A certificate in the **Windows** platform template expired on 11/11/2014 and as a result,
+building **Windows** using the **Cordova CLI** currently fails.
+This affects all existing projects and any new projects created using the command line prior to **Cordova** versions <= `4.0.0`.
 
 > Note that this does not affect the **WP8** platform.  
 
 ## Error Message
-When building Cordova for **Windows**, you may seen an error message that looks something like this 
+When building Cordova for **Windows**, you may seen an error message that looks something like this:
 
 
     cordova run windows
@@ -27,9 +29,14 @@ For more information about renewing certificates, see [http://go.microsoft.com/f
 
 This issue will be fixed in the next release of the **Cordova CLI**
 
-However, to ensure that you can continue building your existing **Cordova** projects for **Windows** till then, please replace the expired certificate located at `yourCordovaProject\platforms\windows\CordovaApp_TemporaryKey.pfx` with a new one from [here](https://git-wip-us.apache.org/repos/asf?p=cordova-windows.git;a=blob;f=template/CordovaApp_TemporaryKey.pfx;h=90d7ab2208ce170d176a2ac8a60eb22fbc1cbf7a;hb=refs/tags/3.7.1). Ensure that the downloaded file is renamed to `CordovaApp_TemporaryKey.pfx`
+However, to ensure that you can continue building your existing **Cordova** projects for **Windows** until you upgrade to the next **Cordova CLI** release,
+please replace the expired certificate located at `yourCordovaProject\platforms\windows\CordovaApp_TemporaryKey.pfx` with the [new one](https://git-wip-us.apache.org/repos/asf?p=cordova-windows.git;a=blob;f=template/CordovaApp_TemporaryKey.pfx;h=90d7ab2208ce170d176a2ac8a60eb22fbc1cbf7a;hb=refs/tags/3.7.1).
+Ensure that you rename the downloaded file to `CordovaApp_TemporaryKey.pfx`.
 
-You can also remove the **Windows** platform using `cordova platform remove windows` and add it again, specifiying a version like `cordova platform add windows@3.7.1`. This picks up the latest release of the **Windows** platform that has a newer certificate.  
+You can also remove the **Windows** platform using `cordova platform remove windows` and add it again,
+specifying a version like `cordova platform add windows@3.7.1`.
+This picks up the latest release of the **Windows** platform that has a newer certificate.
 
 ## Long term fix
-We are working on a long term fix to generate this certificate dynamically. This way, the certificates are not checked into **Cordova** repositories and will not expire. 
+We are working on a long term fix to generate this certificate dynamically.
+This way, the certificates would not be checked into **Cordova** repositories and would not expire.
